@@ -1,0 +1,28 @@
+User Storiesm Features, Data Models
+
+User Stories:
+    1. User can type a movie name to search for that movie
+    2. Show list of all movies that match search
+    3. See details of a single movie by clicking on it (card flip functionality)
+    4. Add a movie to favorites list
+
+
+    Development Plan:
+        1. Type movie name and search for movie 
+            - searchPage.ejs -> Display search bar for user to Type
+                - <Form> -> to capture user search
+                - Form Action -> POST /movieSearch
+            - movieRouter -> handle the movie search and movie list
+            - movieController -> handle the API movie search, and display the movie list
+                - fetchMoviesList()
+            - moviesList.ejs -> Display all movies from user's query
+
+
+
+                Create the following features:
+
+        - Create route & controller & ejs -> GET /favoriteMoviesList -> Fetch all movies from the database and display the movies on favoriteMoviesList.ejs
+
+        - Remove movie from favourites list
+
+        - Update/Edit movie from favourites list

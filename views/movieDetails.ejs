@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+</head>
+<body>
+
+    <a href="/"><button>Back to Search</button></a>
+    <form action="/movie/<%= movie.imdbID %>" method="POST">
+        <button type="submit">Add Movie to Favorites</button>
+    </form>
+    <div>
+        <h1>Title: <%=movie.Title%></h1>
+        <h1>Year: <%=movie.Year%></h1>
+        <h1>Genre: <%=movie.Genre%></h1>
+        <h1>Actors: <%=movie.Actors%></h1>
+        <h1>Plot: <%=movie.Plot%></h1>
+        <img src="<%=movie.Poster%>" alt="">
+    </div>
+    
+</body>
+</html>
